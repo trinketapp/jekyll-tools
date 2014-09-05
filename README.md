@@ -31,7 +31,11 @@ Gives you this interactive Python trinket on your Jekyll site:
 
 ![](https://trinket.io/api/files/540a1c063dd837df5415c56b/Screenshot-2014-09-05-at-4-16-19-PM.png)
 
+Note: This is just a screenshot.  See the real thing in action [here](https://trinket.io/python/b5cbe8a2fa).
+
 ## HTML
+
+This code:
 
 ```
 {% include trinket-open type='html' %}
@@ -65,7 +69,7 @@ Gives you this interactive HTML trinket  on your Jekyll site:
 
 ![](https://trinket.io/api/files/540a1bf83dd837df5415c56a/Screenshot-2014-09-05-at-4-17-47-PM.png)
 
-These trinkets support most of HTML and CSS, but not Javascript (yet).
+Note: These trinkets support most of HTML and CSS, but not Javascript (yet).  Also, you can find a live version of the trinket above [here](https://trinket.io/html/47807974be).
 
 ## Customize!
 
