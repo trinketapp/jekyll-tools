@@ -84,7 +84,7 @@ These trinkets support most of HTML and CSS, but not Javascript (yet).
 
 Make your trinkets the right height:
 ```
-{% include trinket-open type='python' height='100px'%}
+{% include trinket-open type='python' height='100'%}
 for i in range(10):
     print "Only the lines you need"
 {% include trinket-close %}
