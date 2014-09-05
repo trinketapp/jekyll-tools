@@ -1,7 +1,11 @@
 Trinket Jekyll Tools
 ====================
 
-Include interactive trinkets in your Jekyll site with 2 lines of code.  Why?  Because static sites are better when they're interactive!  Trinkets are designed for teaching but you can use them whenever you want your readers to see your code work interactively.  As of Sept 2014 we support Python and HTML/CSS.
+Include interactive trinkets in your Jekyll site with 2 lines of code.  Why?  Because static sites are better when they're interactive!  
+
+Trinkets are designed for teaching but you can use them whenever you want your readers to see your code work interactively.  
+
+As of Sept 2014 Jekyll Tools supports Python and HTML/CSS.
 
 ## Python
 
@@ -25,26 +29,13 @@ tina.write("Hello world!")
 ```
 Gives you this interactive Python trinket on your Jekyll site:
 
-<script type="text/javascript">
-(function(d,l,s,i,p){function n(e){e=e.nextSibling;return (!e||e.nodeType===1)?e:n(e);};function r(f){/in/.test(d.readyState) ? setTimeout(function(){r(f);},9):f()};l=d.getElementsByTagName('script');s=l[l.length-1];r(function(){i=n(s),p=n(i);i.src='https://trinket.io/tools/1.0/jekyll/embed/{% if include.type %}{{ include.type }}{% else %}python{% endif %}#code='+encodeURIComponent(p.innerHTML);});})(document)
-</script>
-<iframe width="{% if include.width %}{{ include.width }}{% else %}100%{% endif %}" height="{% if include.height %}{{ include.height }}{% else %}400{% endif %}"></iframe>
-<pre style="display:none;">
-import turtle
+![](https://trinket.io/api/files/540a1c063dd837df5415c56b/Screenshot-2014-09-05-at-4-16-19-PM.png)
 
-tina = turtle.Turtle()
-
-for c in ['red', 'green', 'yellow', 'blue']:
-    tina.color(c)
-    tina.forward(75)
-    tina.left(90)
-
-tina.penup()
-tina.backward(100)
-tina.write("Hello world!")
-</pre>
+Note: This is just a screenshot.  See the real thing in action [here](https://trinket.io/python/b5cbe8a2fa).
 
 ## HTML
+
+This code:
 
 ```
 {% include trinket-open type='html' %}
@@ -76,9 +67,9 @@ tina.write("Hello world!")
 ```
 Gives you this interactive HTML trinket  on your Jekyll site:
 
-<iframe src="https://trinket.io/embed/html/47807974be" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+![](https://trinket.io/api/files/540a1bf83dd837df5415c56a/Screenshot-2014-09-05-at-4-17-47-PM.png)
 
-These trinkets support most of HTML and CSS, but not Javascript (yet).
+Note: These trinkets support most of HTML and CSS, but not Javascript (yet).  Also, you can find a live version of the trinket above [here](https://trinket.io/html/47807974be).
 
 ## Customize!
 
@@ -92,7 +83,7 @@ for i in range(10):
 ```
 Gives you this interactive Python trinket:
 
-<iframe src="https://trinket.io/embed/python/dc8647c7b3" width="100%" height="180" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+![](https://trinket.io/api/files/540a1bec3dd837df5415c569/Screenshot-2014-09-05-at-4-19-27-PM.png)
 
 ## Installation
 
