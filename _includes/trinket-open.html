@@ -1,5 +1,5 @@
 <script type="text/javascript">
-(function(d,l,s,i,p){function n(e){e=e.nextSibling;return (!e||e.nodeType===1)?e:n(e);};function r(f){/in/.test(d.readyState) ? setTimeout(function(){r(f);},9):f()};l=d.getElementsByTagName('script');s=l[l.length-1];r(function(){i=n(s),p=n(i);i.src='http://trinket.dev/tools/1.0/jekyll/embed/{% if include.type %}{{ include.type }}{% else %}python{% endif %}#code='+encodeURIComponent(p.innerHTML);});})(document)
+(function(d,l,s,i,p){function n(e){e=e.nextSibling;return (!e||e.nodeType===1)?e:n(e);};function r(f){/in/.test(d.readyState) ? setTimeout(function(){r(f);},9):f()};l=d.getElementsByTagName('script');s=l[l.length-1];r(function(){i=n(s),p=n(i);i.src='https://trinket.io/tools/1.0/jekyll/embed/{% if include.type %}{{ include.type }}{% else %}python{% endif %}#code='+encodeURIComponent(p.innerHTML);});})(document)
 </script>
 <iframe width="{% if include.width %}{{ include.width }}{% else %}100%{% endif %}" height="{% if include.height %}{{ include.height }}{% else %}400{% endif %}"></iframe>
 <pre style="display:none;">
