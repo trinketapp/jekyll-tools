@@ -25,7 +25,24 @@ tina.write("Hello world!")
 ```
 Gives you this interactive Python trinket on your Jekyll site:
 
-<iframe src="https://trinket.io/embed/python/0e6d5d4007" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<script type="text/javascript">
+(function(d,l,s,i,p){function n(e){e=e.nextSibling;return (!e||e.nodeType===1)?e:n(e);};function r(f){/in/.test(d.readyState) ? setTimeout(function(){r(f);},9):f()};l=d.getElementsByTagName('script');s=l[l.length-1];r(function(){i=n(s),p=n(i);i.src='https://trinket.io/tools/1.0/jekyll/embed/{% if include.type %}{{ include.type }}{% else %}python{% endif %}#code='+encodeURIComponent(p.innerHTML);});})(document)
+</script>
+<iframe width="{% if include.width %}{{ include.width }}{% else %}100%{% endif %}" height="{% if include.height %}{{ include.height }}{% else %}400{% endif %}"></iframe>
+<pre style="display:none;">
+import turtle
+
+tina = turtle.Turtle()
+
+for c in ['red', 'green', 'yellow', 'blue']:
+    tina.color(c)
+    tina.forward(75)
+    tina.left(90)
+
+tina.penup()
+tina.backward(100)
+tina.write("Hello world!")
+</pre>
 
 ## HTML
 
