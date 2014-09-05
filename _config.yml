@@ -1,0 +1,12 @@
+# Site settings
+title: Trinket Jekyll Tools
+email: ben@trinket.io
+description: "Put interactive trinkets on static Jekyll sites."
+baseurl: ""
+url: "https://trinketapp.github.com/jekyll-tools"
+twitter_username: trinketapp
+github_username:  trinketapp
+
+# Build settings
+markdown: kramdown
+permalink: pretty

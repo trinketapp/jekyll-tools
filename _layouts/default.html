@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+
+    {% include header.html %}
+
+    <div id="banner">
+      <span id="logo"></span>
+
+      <a href="https://github.com/trinketapp/jekyll-tools" class="button fork"><strong>View On GitHub</strong></a>
+      <div class="downloads">
+        <span>Downloads:</span>
+        <ul>
+          <li><a href="https://github.com/trinketapp/jekyll-tools/zipball/master" class="button">ZIP</a></li>
+          <li><a href="https://github.com/trinketapp/jekyll-tools/tarball/master" class="button">TAR</a></li>
+        </ul>
+      </div>
+    </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>{{content}}</section>
+      {% include footer.html %}
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
