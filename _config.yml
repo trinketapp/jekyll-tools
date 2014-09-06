@@ -1,7 +1,7 @@
 # Site settings
 title: Trinket Jekyll Tools
 email: ben@trinket.io
-description: "Put interactive trinkets on static Jekyll sites."
+description: "Easy runnable code blocks on Jekyll sites."
 baseurl: ""
 url: "https://trinketapp.github.com/jekyll-tools"
 twitter_username: trinketapp
