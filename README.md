@@ -1,6 +1,9 @@
 Trinket Jekyll Tools
 ====================
 
+Check out our sample Jekyll site
+## [Trinket Jekyll Tools](http://trinketapp.github.io/jekyll-tools/)
+
 Include interactive trinkets in your Jekyll site with 2 lines of code.  Why?  Because static sites are better when they're interactive!  
 
 Trinkets are designed for teaching but you can use them whenever you want your readers to see your code work interactively.  
