@@ -10,3 +10,6 @@ github_username:  trinketapp
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+safe: true
+lsi: false
