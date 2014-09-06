@@ -115,7 +115,7 @@ The interactive HTML trinket is soulmates with [Mozilla Thimble](https://thimble
 
 ## Contributions
 
-Contributions to these tools are welcome.  [Contact us](hello@trinket.io) or open an issue to discuss what you want to do.
+Contributions to these tools are welcome.  [Contact us](mailto:hello@trinket.io) or open an issue to discuss what you want to do.
 
 ## License
 
