@@ -1,0 +1,58 @@
+<script type="text/javascript">
+(function(doc) {
+  var TRINKET = /^\s*trinket/i;
+  var WIDTH   = /\swidth\s*=\s*(?:'")?(\d+%?)/i;
+  var HEIGHT  = /\sheight\s*=\s*(?:'")?(\d+%?)/;
+  var auto    = {% if include.auto == false %}false{% else %}true{% endif %};
+
+  function onReady(cb){
+    /in/.test(doc.readyState)
+      ? setTimeout(function(){onReady(cb);},9)
+      : cb();
+  }
+
+  function findComment(e){
+    while(e && e.nodeType === 3) {
+      e = e.previousSibling;
+    }
+
+    return e && e.nodeType === 8 && TRINKET.exec(e.nodeValue)
+      ? e.nodeValue
+      : '';
+  }
+
+  function getAttr(extractor, comment, defaultValue) {
+    var attr = comment ? extractor.exec(comment) : null;
+    return attr
+      ? attr[1]
+      : defaultValue;
+  }
+
+  onReady(function() {
+    var preList = doc.getElementsByTagName('pre')
+        , l = preList.length
+        , i, pre, parent, width, height, code, lang, frame;
+
+    for(i = preList.length; --i >= 0;) {
+      pre = preList[i];
+      parent = pre.parentNode;
+      if (parent && parent.nodeType === 1 && parent.className === 'highlight') {
+        var comment = findComment(parent.previousSibling);
+        if (auto || comment) {
+          code = pre.firstChild;
+          if (code && code.tagName === 'CODE' && code.getAttribute('data-lang')) {
+            lang = code.getAttribute('data-lang').toLowerCase();
+            if (lang === 'html' || lang === 'python') {
+              frame = doc.createElement('IFRAME');
+              frame.src    = "http://trinket.dev/tools/1.0/jekyll/embed/" + lang + "#code=" + encodeURIComponent(code.innerText);
+              frame.width  = getAttr(WIDTH, comment, '100%');
+              frame.height = getAttr(HEIGHT, comment, '400');
+              pre.parentNode.replaceChild(frame, pre);
+            }
+          }
+        }
+      }
+    }
+  });
+})(document);
+</script>
