@@ -1,4 +1,4 @@
-Trinket Jekyll Tools
+[Trinket Jekyll Tools](http://trinketapp.github.io/jekyll-tools/)
 ====================
 
 Check out our sample Jekyll site [Trinket Jekyll Tools](http://trinketapp.github.io/jekyll-tools/)
