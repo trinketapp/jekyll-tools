@@ -1,5 +1,16 @@
 require 'cgi'
 
+# quick and dirty checksum generator
+# function cs(s){var h=0,l=s.length,i,c;for(i=0;i<l;i++){c=s.charCodeAt(i);h=((h<<5)–h)+c;h=h&h;}return h;}
+
+# inflate a zlib.deflated string
+# var hashData = decodeURIComponent(hash.substr(1));
+# var strData  = atob(hashData);
+# // Convert binary string to character-number array
+# var charData = strData.split('').map(function(x){return x.charCodeAt(0);});
+# var binData  = new Uint8Array(charData);
+# return pako.inflate(binData, {to:'string'});
+
 class TrinketTag < Liquid::Block
 
   SYNTAX = /^([a-zA-Z0-9.+#-]+)((\s+\w+(=(\S+))?)*)$/
