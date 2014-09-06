@@ -7,7 +7,9 @@ Trinkets are designed for teaching but you can use them whenever you want your r
 After installation, make your code blocks interactive and awesome with just two additional lines:
 
 
-{% highlight liquid %}{% raw %}{% include trinket-open %}# your code here{% include trinket-close %}{% endraw %}
+{% highlight liquid %}{% raw %}{% include trinket-open %}{% endraw %}
+# your code here
+{% raw %}{% include trinket-close %}{% endraw %}{% endhighlight %}
 
 That's it!  As of Sept 2014 Jekyll Tools supports Python and HTML/CSS.
 
