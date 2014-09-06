@@ -7,7 +7,17 @@ Include interactive trinkets in your Jekyll site with 2 lines of code.  Why?  Be
 
 Trinkets are designed for teaching but you can use them whenever you want your readers to see your code work interactively.  
 
-As of Sept 2014 Jekyll Tools supports Python and HTML/CSS.
+## Usage
+
+After installation, make your code blocks interactive and awesome with just two additional lines:
+
+```
+{% include trinket-open %}
+# your code here
+{% include trinket-close %}
+```
+
+That's it!  As of Sept 2014 Jekyll Tools supports Python and HTML/CSS.
 
 ## Python
 
