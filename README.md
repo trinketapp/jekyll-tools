@@ -7,7 +7,17 @@ Include interactive trinkets in your Jekyll site with 2 lines of code.  Why?  Be
 
 Trinkets are designed for teaching but you can use them whenever you want your readers to see your code work interactively.  
 
-As of Sept 2014 Jekyll Tools supports Python and HTML/CSS.
+## Usage
+
+After installation, make your code blocks interactive and awesome with just two additional lines:
+
+```
+{% include trinket-open %}
+# your code here
+{% include trinket-close %}
+```
+
+That's it!  As of Sept 2014 Jekyll Tools supports Python and HTML/CSS.
 
 ## Python
 
@@ -33,7 +43,7 @@ Gives you this interactive Python trinket on your Jekyll site:
 
 ![](https://trinket.io/api/files/540a1c063dd837df5415c56b/Screenshot-2014-09-05-at-4-16-19-PM.png)
 
-Note: This is just a screenshot.  See the real thing in action [here](https://trinket.io/python/b5cbe8a2fa).
+Note: This is just a screenshot.  See the real thing in action [here](http://trinketapp.github.io/jekyll-tools/#python).
 
 ## HTML
 
@@ -71,13 +81,13 @@ Gives you this interactive HTML trinket  on your Jekyll site:
 
 ![](https://trinket.io/api/files/540a1bf83dd837df5415c56a/Screenshot-2014-09-05-at-4-17-47-PM.png)
 
-Note: These trinkets support most of HTML and CSS, but not Javascript (yet).  Also, you can find a live version of the trinket above [here](https://trinket.io/html/47807974be).
+Note: These trinkets support most of HTML and CSS, but not Javascript (yet).  Also, you can find a live version of the trinket above [here](http://trinketapp.github.io/jekyll-tools/#html).
 
 ## Customize!
 
 Make your trinkets the right height:
 ```
-{% include trinket-open type='python' height='100'%}
+{% include trinket-open type='python' height='100'}
 for i in range(10):
     print "Only the lines you need"
 {% include trinket-close %}
@@ -105,7 +115,7 @@ The interactive HTML trinket is soulmates with [Mozilla Thimble](https://thimble
 
 ## Contributions
 
-Contributions to these tools are welcome.  [Contact us](hello@trinket.io) or open an issue to discuss what you want to do.
+Contributions to these tools are welcome.  [Contact us](mailto:hello@trinket.io) or open an issue to discuss what you want to do.
 
 ## License
 
