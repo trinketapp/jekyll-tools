@@ -110,13 +110,13 @@ Gives you this interactive HTML trinket  on your Jekyll site:
 </html>
 {% include trinket-close %}
 
-Note: These trinkets support most of HTML and CSS, but not Javascript (yet).  Also, you can find a live version of the trinket above [here](https://trinket.io/html/47807974be).
+Note: These trinkets support HTML, CSS, and Javascript.  You can find a live version of the trinket above [here](https://trinket.io/html/47807974be).
 
 ## Customize!
 
 Make your trinkets the right height:
 {% highlight liquid %}
-{% raw %}{% include trinket-open type='python' height='100' %}{% endraw %}
+{% raw %}{% include trinket-open type='python' height='160' %}{% endraw %}
 for i in range(10):
     print "Only the lines you need"
 {% raw %}{% include trinket-close %}{% endraw %}
@@ -150,4 +150,4 @@ Contributions to these tools are welcome.  [Contact us](hello@trinket.io) or ope
 
 ## License
 
-Released under the MIT License. (C) 2014 Ben Wheeler.  See LICENSE for details.
+Released under the MIT License. (C) 2014-2016 Ben Wheeler and Trinket.  See LICENSE for details.
